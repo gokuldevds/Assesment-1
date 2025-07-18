@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="confirmation.css" />
+    
+    
+</head>
+<body>
+    <h2>Registration</h2>
+   
+    <form action="profile.html" onsubmit="return validate()">
+        <div class="form-group">
+            <label for="firstName">Name</label>
+            <div class="name-fields">
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" />
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name" />
+                
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter your email" />
+           
+        </div>
+
+        <div class="form-group">
+            <label for="areaCode">Phone Number</label>
+            <div class="phone-fields">
+                <input type="tel" id="countrycode"  placeholder="Country Code" value="+" maxlength="6"  style="width: 5rem;" />
+                <input type="tel" id="phoneNumber"  placeholder="Phone Number" maxlength="12"   />
+               
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for=" Startdate">Starting Date</label>
+            <input type="date" id="Startdate" name="Startdate" />
+        </div>
+
+        <div class="form-group">
+            <label for="enddate">Ending Date</label>
+            <input type="date" id="enddate" name="enddate" />
+        </div>
+
+        <button type="submit">Submit</button>
+        <label id="message1" style="color: red;  visibility: hidden;">Validity</label>
+    </form>
+    <script src="registration.js"></script>
+</body>
+</html>
